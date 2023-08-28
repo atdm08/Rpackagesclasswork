@@ -84,7 +84,10 @@ In 'myDf7', 'myDf8' is created. It calculates the time difference between arriva
 
     cat(mensaje4)
 
-    return(comparison_result)
+    return(list(
+      myDf7 = myDf7,
+      myDf8 = myDf8
+    ))
   }
   #5.6.7 Exercises: item 1#
   if (exercise_num == "5") {
@@ -126,7 +129,7 @@ than or equal to zero), and the punctuality percentage. Then, it sorts the resul
 on the punctuality percentage and filters out cases with no punctuality value. The result, worst_punctuality,/n
 shows which aircraft have the poorest punctuality record.\n"
     cat(mensaje6)
-    return(worst_punctuality)
+    return(myDf9)
   }
   # If don´t found the exercise
   return("Exercise not found.")
